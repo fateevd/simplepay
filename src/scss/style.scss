@@ -15,11 +15,14 @@
     padding-bottom: 30px;
 }
 
+@import "components/header";
+
 .info {
     &-form { 
         display: block;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
         border-radius: 10px;
+        margin-bottom: 40px;
     } 
     
 }
@@ -82,13 +85,36 @@
 }
 
 
+.download { 
+    &-app { 
+        background-image: url('../img/app-fon.svg');
+        background-repeat: no-repeat;
+        color: $colorWhite;
+        display: flex;
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 16px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0;
+    }
+    &__item { 
+        display: block;
+    }
+    &__list { 
+        display: flex;
+        align-items: center;
+        &::before { 
+            margin-right: 13px;
+            transform: translateY(-3px);
+            content:  url('../img/Rectangle.svg');
+        }
+    }
+}
 
-
-
-
-
-@import "components/header";
-
-
-
-
+.app-phone { 
+    width: 250px;
+    height: 220px;
+}
