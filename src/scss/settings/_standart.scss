@@ -55,6 +55,17 @@ select {
     box-sizing: border-box;
 }
 
+details,
+details summary {
+    outline: none;
+    list-style: none;
+    
+}
+details::-webkit-details-marker {
+	display: none;
+}
+
+
 
 .btn { 
     border: none;
