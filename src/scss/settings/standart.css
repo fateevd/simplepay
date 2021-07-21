@@ -1,0 +1,67 @@
+html { 
+    box-sizing: border-box;
+}
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', serif;
+}
+
+img { 
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+}
+
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input { 
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type='date'] { 
+    padding: 7px 16px ;
+}
+
+input::-webkit-calendar-picker-indicator {
+    background-image: url(../img/date-icon.svg);
+  }
+
+
+select { 
+    border: none;
+    outline: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.btn { 
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}

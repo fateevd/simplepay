@@ -1,0 +1,54 @@
+.header { 
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    padding-bottom: 12px;
+    &::before { 
+        content: ' ';
+        position: absolute;
+        top: 0;
+        background: $colorHG;
+        width: 100%;
+        height: 20px;
+    }
+    &__bar { 
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    &__left, &__right { 
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        &-text { 
+            font-size: 22px;
+            color: $colorBlackText;
+            line-height: 28px;
+        }
+    }
+    &__right { 
+        &-content { 
+            text-align: end;
+            margin-right: 30px;
+        }
+    }
+
+}
+
+.logo { 
+    margin-right: 16px;
+}
+
+
+.content { 
+    &__info { 
+        color: $colorGrayText;
+        margin-bottom: 6px;
+    }
+    &__phone { 
+        font-size: 20px;
+        color: $colorBlackText;
+        font-weight: 600;
+    }
+}
