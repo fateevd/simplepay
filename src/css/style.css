@@ -585,7 +585,7 @@ details::-webkit-details-marker {
       grid-template-columns: 1fr 350px;
   -ms-grid-rows: 270px 1fr;
       grid-template-rows: 270px 1fr;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .btn {
@@ -663,6 +663,10 @@ details::-webkit-details-marker {
   overflow: auto;
 }
 
+option {
+  height: 40px;
+}
+
 .download {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
@@ -736,6 +740,7 @@ details::-webkit-details-marker {
   font-size: 14px;
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
+  width: 260px;
 }
 
 .main-info {
@@ -754,7 +759,7 @@ details::-webkit-details-marker {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 15px;
+  padding: 21px;
 }
 
 .accordion:not(:last-child) {
@@ -769,13 +774,18 @@ details::-webkit-details-marker {
 
 .accordion__img {
   margin-right: 10px;
+  width: 73px;
+  height: 73px;
 }
 
 .accordion__text {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  margin-left: 75px;
+  margin-top: -35px;
+  margin-left: 85px;
   font-size: 14px;
   color: #596D7B;
+}
+
+.accordion__text-one {
+  margin-top: -18px;
 }
 /*# sourceMappingURL=style.css.map */
