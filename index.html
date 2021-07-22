@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,23 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>Главная Оплата ФССП</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__bar">
-            <div class="header__left">
-                <img src="src/img/logo.svg" alt="logo" class="logo">
-                <div class="header__left-text">Проверка и&nbsp;оплата <br> задолженности ФССП&nbsp;РФ</div>
-            </div>
-            <div class="header__right">
-                <div class="header__right-content">
-                    <div class="content__info">Единый бесплатный многоканальный <br> справочный номер ФССП России:</div>
-                    <a href="tel:8 (800) 250 39 32" class="content__phone">8 (800) 250 39 32</a>
+                <div class="header__left">
+                    <img src="src/img/logo.svg" alt="logo" class="logo">
+                    <div class="header__left-text">Проверка и&nbsp;оплата <br> задолженности ФССП&nbsp;РФ</div>
                 </div>
-                <img src="src/img/user.svg" alt="user" class="user">
-            </div>
+                <div class="header__right">
+                    <div class="header__right-content">
+                        <div class="content__info">Единый бесплатный многоканальный <br> справочный номер ФССП России:
+                        </div>
+                        <a href="tel:8 (800) 250 39 32" class="content__phone">8 (800) 250 39 32</a>
+                    </div>
+                    <img src="src/img/user.svg" alt="user" class="user">
+                </div>
             </div>
         </div>
     </header>
@@ -29,34 +32,91 @@
         <div class="container">
             <section class="info">
                 <h2 class="section-title">Проверить задолженность у&nbsp;судебных приставов</h2>
-                <div class="info-debtor">
-                    <div action="" class="info-form">
-                    <div class="tab">
-                        <button class="btn tab-btn">Физическое лицо</button>
-                        <button class="btn tab-btn">Юридическое лицо</button>
-                        <button class="btn tab-btn">Номер ИП</button>
-                        <button class="btn tab-btn">Номер ИД</button>
+                <div class="info-debtor ">
+                    <form action="" class="info-form ">
+                        <div class="tab">
+                            <button class="btn tab-btn">Физическое лицо</button>
+                            <button class="btn tab-btn">Юридическое лицо</button>
+                            <button class="btn tab-btn">Номер ИП</button>
+                            <button class="btn tab-btn">Номер ИД</button>
+                        </div>
+                        <div class="tab-content">
+                            <input type="text" class="tab-input tab-input__big" name="FIO">
+                            <input type="date" class="tab-input tab-input-date" name="date">
+                            <br>
+                            <select size="1" class="city tab-input tab-input__big">
+                                <option>Все регионы</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 2</option>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                            </select>
+                            <button class="btn tab-send ">Проверить задолженности</button>
+                        </div>
+                    </form>
+                   
+                    <div class="main-info ">
+                        <details open class="accordion">
+                            <summary class="accordion__title">
+                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Официальный <br> источник данных</h3>
+                            </summary>
+                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются
+                                из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title">
+                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Официальный <br> источник данных</h3>
+                            </summary>
+                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются
+                                из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title">
+                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Официальный <br> источник данных</h3>
+                            </summary>
+                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются
+                                из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title">
+                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Официальный <br> источник данных</h3>
+                            </summary>
+                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются
+                                из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
+                        </details>
                     </div>
-                    <div class="tab-content">
-                        <input type="text" class="tab-input tab-input__big" name="FIO" >
-                        <input type="date" class="tab-input tab-input-date" name="date" >
-                        <br>
-                        <select    class="city tab-input tab-input__big">
-                            <option >Все регионы</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                        </select>
-                        <button class="btn tab-send ">Проверить задолженности</button>
-                    </div>
-                    </div>
-                    <div class="download">
+                    <div class="download ">
                         <div class="download-app">
                             <img src="src/img/phone-iphone.svg" alt="iphone" class="app-phone">
                             <div class="download-text">
@@ -72,38 +132,8 @@
                                 <img src="src/img/qr.svg" alt="qr" class="qr__img">
                                 <div class="qr__text">Наведите камеру или сканер QR-кодов</div>
                             </div>
-                            
+
                         </div>
-                    </div>
-                    <div class="main-info">
-                        <details open class="accordion">
-                            <summary class="accordion__title">
-                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
-                                <h3 class="main__title">Официальный <br> источник данных</h3>
-                            </summary>
-                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
-                        </details>
-                        <details open class="accordion">
-                            <summary class="accordion__title">
-                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
-                                <h3 class="main__title">Официальный <br> источник данных</h3>
-                            </summary>
-                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
-                        </details>
-                        <details open class="accordion">
-                            <summary class="accordion__title">
-                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
-                                <h3 class="main__title">Официальный <br> источник данных</h3>
-                            </summary>
-                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
-                        </details>
-                        <details open class="accordion">
-                            <summary class="accordion__title">
-                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
-                                <h3 class="main__title">Официальный <br> источник данных</h3>
-                            </summary>
-                            <p class="accordion__text">Сведения о&nbsp;задолженностях <br> получаются из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
-                        </details>
                     </div>
                 </div>
             </section>
@@ -126,22 +156,31 @@
     </main>
     <footer class="footer">
         <div class="container">
-        <div class="footer-list">
-            <ul class="footer__list">
-                <li class="footer__items"><h3 class="title-items">Основные разделы</h3></li>
-                <li class="footer__items"><a href="#" class="footer__items__link">Проверка и оплата задолженностей ФССП</a></li>
-                <li class="footer__items"><a href="#" class="footer__items__link"> Статьи о работе ФССП</a></li>
-                <li class="footer__items"><a href="#" class="footer__items__link">Новости</a></li>
-                <li class="footer__items"><a href="#" class="footer__items__link">Часто задаваемые вопросы</a></li>
-            </ul>
-            <div class="footer-text">При обращении по вопросам прохождения оплаты и погашения задолженности по ИП укажите, пожалуйста, номер транзакции, который был отправлен в письме о подтверждении успешной оплаты.</div>
-        </div>
-        <div class="footer-text">Сервис oplata-fssp.ru создан для удобной онлайн проверки и оплаты задолженностей по исполнительным производствам Федеральной службы судебных приставов России (ФССП). 
-            Сервис осуществляет свою деятельность в рамках соглашения с Федеральной службой судебных приставов №0011/14 от 11 мая 2017.
-            Операторами по переводу денежных средств являются НКО “Монета.ру” (лицензия ЦБ РФ №3508-К от 02 июля 2012) и ПАО “Промсвязьбанк” (лицензия ЦБ РФ №3521 от 17 декабря 2014).
-            
+            <div class="footer-list">
+                <ul class="footer__list">
+                    <li class="footer__items">
+                        <h3 class="title-items">Основные разделы</h3>
+                    </li>
+                    <li class="footer__items"><a href="#" class="footer__items__link">Проверка и оплата задолженностей
+                            ФССП</a></li>
+                    <li class="footer__items"><a href="#" class="footer__items__link"> Статьи о работе ФССП</a></li>
+                    <li class="footer__items"><a href="#" class="footer__items__link">Новости</a></li>
+                    <li class="footer__items"><a href="#" class="footer__items__link">Часто задаваемые вопросы</a></li>
+                </ul>
+                <div class="footer-text">При обращении по вопросам прохождения оплаты и погашения задолженности по ИП
+                    укажите, пожалуйста, номер транзакции, который был отправлен в письме о подтверждении успешной
+                    оплаты.</div>
+            </div>
+            <div class="footer-text">Сервис oplata-fssp.ru создан для удобной онлайн проверки и оплаты задолженностей по
+                исполнительным производствам Федеральной службы судебных приставов России (ФССП).
+                Сервис осуществляет свою деятельность в рамках соглашения с Федеральной службой судебных приставов
+                №0011/14 от 11 мая 2017.
+                Операторами по переводу денежных средств являются НКО “Монета.ру” (лицензия ЦБ РФ №3508-К от 02 июля
+                2012) и ПАО “Промсвязьбанк” (лицензия ЦБ РФ №3521 от 17 декабря 2014).
+
             </div>
         </div>
     </footer>
 </body>
+
 </html>

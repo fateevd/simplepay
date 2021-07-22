@@ -572,11 +572,20 @@ details::-webkit-details-marker {
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   margin-bottom: 40px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .info-debtor {
   display: -ms-grid;
   display: grid;
+  gap: 15px;
+  -ms-grid-columns: 1fr 350px;
+      grid-template-columns: 1fr 350px;
+  -ms-grid-rows: 270px 1fr;
+      grid-template-rows: 270px 1fr;
+  margin-bottom: 100px;
 }
 
 .btn {
@@ -590,14 +599,14 @@ details::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .tab-btn {
   padding: 18px;
   margin: -1px -2px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
 }
 
 .tab-btn:active, .tab-btn:hover {
@@ -614,7 +623,7 @@ details::-webkit-details-marker {
 }
 
 .tab-content {
-  padding-top: 30px;
+  padding: 30px 0 40px;
 }
 
 .tab-input {
@@ -631,7 +640,7 @@ details::-webkit-details-marker {
 
 .tab-input__big {
   width: 400px;
-  margin: 0 20px 20px 0;
+  margin: 0 20px 20px 25px;
 }
 
 .tab-input-date {
@@ -650,6 +659,16 @@ details::-webkit-details-marker {
   background: #f6f6f6;
 }
 
+.city {
+  overflow: auto;
+}
+
+.download {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
 .download-app {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -663,6 +682,8 @@ details::-webkit-details-marker {
   font-weight: 400;
   font-size: 16px;
   padding-top: 40px;
+  height: 311px;
+  width: 849px;
 }
 
 .download-text {
@@ -705,12 +726,6 @@ details::-webkit-details-marker {
   width: 230px;
 }
 
-.qr {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-}
-
 .qr__img {
   width: 200px;
 }
@@ -724,9 +739,8 @@ details::-webkit-details-marker {
 }
 
 .main-info {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
 .main__title {
@@ -741,6 +755,10 @@ details::-webkit-details-marker {
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 15px;
+}
+
+.accordion:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .accordion__title {
