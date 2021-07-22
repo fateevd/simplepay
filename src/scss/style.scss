@@ -15,5 +15,11 @@
     padding-bottom: 30px;
 }
 
+.link { 
+    font-weight: 600;
+    color: $colorHG; 
+}
+
 @import "components/header";
 @import "components/info";
+@import "components/article";

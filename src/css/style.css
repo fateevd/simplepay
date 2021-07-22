@@ -502,6 +502,11 @@ details::-webkit-details-marker {
   padding-bottom: 30px;
 }
 
+.link {
+  font-weight: 600;
+  color: #03A06C;
+}
+
 .header {
   -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
@@ -787,5 +792,72 @@ option {
 
 .accordion__text-one {
   margin-top: -18px;
+}
+
+.article .link {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.article .link-two {
+  padding-top: 20px;
+}
+
+.article-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(32, 53, 56, 0.9);
+}
+
+.article-of-work {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding-left: 25px;
+  margin-right: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 67%;
+          flex: 0 0 67%;
+}
+
+.article__items-of-work {
+  padding-bottom: 45px;
+}
+
+.article__title {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 70;
+  color: #203538;
+}
+
+.article__list {
+  margin-bottom: 25px;
+}
+
+.list__title {
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.list__text {
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.territory {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding-left: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+}
+
+.territory .list__text {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
