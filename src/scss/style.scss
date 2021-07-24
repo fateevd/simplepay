@@ -23,4 +23,76 @@
 @import "components/header";
 @import "components/info";
 @import "components/article";
+@import "components/slider";
 @import "components/footer";
+
+
+.news { 
+    margin-bottom: 100px;
+}
+
+.slider { 
+    position: relative;
+    &__item { 
+        text-align: center;
+        width: 400px;
+        padding-top: 50px;
+    }
+    &__title , &__text { 
+        text-align: start;
+        padding-left: 35px;
+    }
+}
+
+.slick { 
+    
+    &-list { 
+        overflow: hidden;
+    }
+    &-track { 
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &-arrow { 
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0; 
+        width: 35px;
+        height: 35px;
+        outline: none;
+        border: none;
+        margin-top: -40px;
+    }
+    &-prev { 
+        left: 0;
+        background: url('../img/prev-btn.svg') 0 0 / 100% no-repeat;
+    }
+    &-next {
+        right: 0;
+        background: url('../img/next-btn.svg') 0 0 / 100% no-repeat;
+     }
+    &-dots { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li { 
+            margin-right: 9px;
+            
+        }
+        button {
+            background: $colorHGOP; 
+            font-size: 0; 
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            border: none;
+        }
+    }
+    &-active { 
+        button { 
+            background: $colorHG;
+        }
+    }
+}

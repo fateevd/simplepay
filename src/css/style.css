@@ -929,4 +929,90 @@ option {
           flex: 0 0 30%;
   line-height: 18px;
 }
+
+.news {
+  margin-bottom: 100px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  text-align: center;
+  width: 400px;
+  padding-top: 50px;
+}
+
+.slider__title, .slider__text {
+  text-align: start;
+  padding-left: 35px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+  outline: none;
+  border: none;
+  margin-top: -40px;
+}
+
+.slick-prev {
+  left: 0;
+  background: url("../img/prev-btn.svg") 0 0/100% no-repeat;
+}
+
+.slick-next {
+  right: 0;
+  background: url("../img/next-btn.svg") 0 0/100% no-repeat;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-dots li {
+  margin-right: 9px;
+}
+
+.slick-dots button {
+  background: rgba(3, 160, 108, 0.3);
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  border: none;
+}
+
+.slick-active button {
+  background: #03A06C;
+}
 /*# sourceMappingURL=style.css.map */
