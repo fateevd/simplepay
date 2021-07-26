@@ -27,3 +27,13 @@
 @import "components/footer";
 
 
+select {
+    &::-webkit-scrollbar {
+    width: 10px;
+    background: $colorAlabaster;
+  }
+  &::-webkit-scrollbar-thumb { 
+      background: $colorHG;
+      border-radius: 8px;
+  }
+}

@@ -1029,4 +1029,14 @@ option {
           flex: 0 0 30%;
   line-height: 18px;
 }
+
+select::-webkit-scrollbar {
+  width: 10px;
+  background: #F7F7F7;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #03A06C;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=style.css.map */
