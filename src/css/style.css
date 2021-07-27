@@ -1152,6 +1152,10 @@ details::-webkit-details-marker {
   padding-bottom: 10px;
 }
 
+.territory .list__text a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 1240px) {
   .territory {
     -webkit-box-flex: 1;
@@ -1434,16 +1438,6 @@ details::-webkit-details-marker {
   }
 }
 
-select::-webkit-scrollbar {
-  width: 10px;
-  background: #F7F7F7;
-}
-
-select::-webkit-scrollbar-thumb {
-  background: #03A06C;
-  border-radius: 8px;
-}
-
 .form-details {
   display: none;
   font-size: 16;
@@ -1500,5 +1494,15 @@ select::-webkit-scrollbar-thumb {
   background: #fff;
   color: #03A06C;
   font-size: 16px;
+}
+
+select::-webkit-scrollbar {
+  width: 10px;
+  background: #F7F7F7;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #03A06C;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

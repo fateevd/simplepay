@@ -60,6 +60,10 @@
     flex: 0 0 35%;
     .list__text { 
         padding-bottom: 10px;
+        
+        a { 
+            color: $colorBlackText;
+        }
     }
     @include desktop { 
         flex: 1 0 30%;
