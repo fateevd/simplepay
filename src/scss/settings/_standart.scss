@@ -37,9 +37,7 @@ input {
     box-sizing: border-box;
 }
 
-input[type='date'] { 
-    padding: 7px 16px ;
-}
+
 
 input::-webkit-calendar-picker-indicator {
     background-image: url(../img/date-icon.svg);

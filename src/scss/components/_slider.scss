@@ -2,10 +2,15 @@
     padding-bottom: 60px;
     background: $colorAlabaster;
     margin-bottom: 100px;
+    @include tablet { 
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+    }
     &-link { 
         padding-top: 20px;
         display: block;
         text-align: end;
+        
     }
 }
 
@@ -19,6 +24,12 @@
     &__title , &__text { 
         text-align: start;
         padding-left: 35px;
+        @include desktop-small { 
+         padding-left: 20px;   
+        }
+        @include tablet-big { 
+            padding-left: 0;
+        }
     }
     &__text { 
         padding-top: 12px;
@@ -45,17 +56,26 @@
         outline: none;
         border: none;
         margin-top: -55px;
-        
+        @include desktop-small { 
+            margin-top: -90px;
+        }
     }
     &-prev {
         margin-left: 10px; 
         left: 0;
         background: url('../img/prev-btn.svg') 0 0 / 100% no-repeat;
+        @include desktop-small { 
+            margin-left: 0;
+        }
+      
     }
     &-next {
         margin-right: 10px;
         right: 0;
         background: url('../img/next-btn.svg') 0 0 / 100% no-repeat;
+        @include desktop-small { 
+            margin-right: 0;
+        }
      }
     &-dots { 
         display: flex;
@@ -63,7 +83,7 @@
         justify-content: center;
         li { 
             margin-right: 9px;
-            
+            margin-top: 20px;
         }
         button {
             background: $colorHGOP; 

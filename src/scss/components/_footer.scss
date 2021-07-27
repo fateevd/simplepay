@@ -4,25 +4,45 @@
         display: flex;
         align-items: flex-start;
         padding: 32px 0 34px;
+        @include tablet { 
+            flex-wrap: wrap;
+        }
+        @include mobil { 
+            flex-direction: column;
+        }
     }
     &__items { 
         color: $colorBlackText;
         &:nth-child(2) { 
             flex: 0 0 18%;
+            @include tablet { 
+                flex: 0 0 50%;
+            }
         }
         &:nth-child(3) { 
             flex: 0 0 28%;
+            @include tablet { 
+                flex: 0 0 50%;
+                margin-top: 20px;
+            }
         }
         &-first { 
             font-weight: 600;
             font-family: "Open Sans";
             flex: 0 0 27%;
             margin-right: 20px;
+            @include tablet { 
+                flex: 0 0 40%;
+            }
         }
     }
     &__list { 
         &:not(:last-child){
             padding-bottom: 11px;
+            
+        }
+        @include mobil { 
+            margin-bottom : 20px;
         }
         &-title {
             margin-bottom: 10px;
@@ -40,5 +60,11 @@
         align-self: center;
         flex: 0 0 30%;
         line-height: 18px;
+        @include desktop { 
+            flex: 0 0 20%;
+        }
+        @include tablet { 
+            flex: 0 0 50%;
+        }
     }
 }

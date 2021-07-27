@@ -6,6 +6,9 @@
         border-radius: 10px;
         margin-bottom: 40px;
         align-self: start;
+        @include mobil-big { 
+            display: none;
+        }
     } 
     &-debtor { 
         display: grid;
@@ -13,6 +16,13 @@
         grid-template-columns: 1fr 350px;
         grid-template-rows: 270px 1fr;
         margin-bottom: 40px;
+        @include desktop-small { 
+            grid-row-gap: 10px;
+        }
+        @include tablet-big { 
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr;
+        }
     }
 }
 
@@ -56,10 +66,18 @@
         &__big { 
             width: 400px;
             margin: 0 20px 20px 25px;
-            
+            @include desktop-small { 
+                max-width: 300px;
+                margin: 0 10px 15px;
+            }
         }
         &-date { 
             min-width: 304px;
+            padding: 7px 16px; 
+            @include desktop-small { 
+                padding: 7px 9px;
+                max-width: 290px;
+            }
         }
     }
     &-send { 
@@ -68,6 +86,9 @@
         background: $colorWhite;
         color: $colorHG;
         padding: 11px 32px;
+        @include desktop-small { 
+            padding: 11px 25px;
+        }
         &:active { 
             background: $colorWildSand;
         }
@@ -79,14 +100,15 @@
     
 }
 
-option { 
-    height: 40px;
-}
+
 
 .download {
     align-self: start;
-
+    @include tablet-big { 
+        grid-row: 2;
+    }
     &-app { 
+        margin-top: 30px;
         align-self: flex-start;
         background-image: url('../img/app-fon.svg');
         background-repeat: no-repeat;
@@ -97,19 +119,36 @@ option {
         font-size: 16px;
         padding-top: 40px;
         height: 311px;
-        width: 849px;
+        max-width: 849px;
+        @include desktop-small { 
+            padding-top: 0;
+        }
+        @include tablet-big { 
+            width: 100%;
+        }
+        @include mobil-big { 
+         flex-wrap: wrap;   
+         justify-content: center;
+        }
     }
     &-text {
         padding-right: 18px;
+        
     }
     &__title {
         font-weight: 700;
         font-size: 20px;
         padding: 4px 0;
+        @include mobil-big { 
+            justify-content: center;
+        }
     }
     &__item { 
         display: block;
         padding-top: 30px;
+        @include mobil-big { 
+            display: none;
+        }
     }
     &__list { 
         display: flex;
@@ -119,6 +158,12 @@ option {
         }
         &:not(:first-child){ 
             margin-top: 30px;
+            @include desktop-small { 
+                margin: 5px;
+            }
+        }
+        @include mobil-big { 
+            display: none;
         }
         &::before { 
             margin-right: 13px;
@@ -126,15 +171,54 @@ option {
             content:  url('../img/Rectangle.svg');
         }
     }
+    @include desktop { 
+        img { 
+            max-width: 150px;
+            @include mobil-big { 
+                min-width: 45%;
+            }
+        }
+    }
+    &-btn {
+        display: none;  
+        width: 100%;
+        background: initial;
+        @include mobil-big {
+            display: block;
+        }
+        &:first-child { 
+            margin: 0 7px;
+        }
+        
+    }
+}
+
+
+
+.link-app { 
+    align-self: center;
+    @include mobil-big { 
+        order: 3;
+    }
 }
 
 .app-phone { 
     width: 230px;
+    @include mobil-big { 
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        margin-top: -30px;
+    }
 }
 
-.qr { 
+.qr {
+    @include desktop-small { 
+        align-self: center;
+    } 
     &__img { 
         width: 200px;
+        
     }
     &__text { 
         padding-top: 9px;
@@ -143,30 +227,59 @@ option {
         transform: translateX(-30px);
         width: 260px;
     }
+    @include mobil-big { 
+        display: none;
+    }
 }
 
 .main { 
     &-info { 
         transform: translateY(-60px);
+        @include tablet-big { 
+            transform: translateY(0);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        @include mobil-big { 
+            grid-template-columns: repeat(1, 100%);
+            grid-gap: 0;            
+        }
     }
     &__title { 
         padding-top: 5px;
         font-weight: 700;
         font-style: 18px;
         color: $colorTePapaGreen;
+        @include mobil-big { 
+            color: $colorHG;
+        }
     }
 }
 
+
+
+
 .accordion { 
+    align-items: center;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;    
     padding: 21px;
+    @include desktop { 
+        padding: 15px;
+    }
+    @include mobil-big { 
+     border: 3px solid $colorHG;                 
+    }
     &:not(:last-child){
         margin-bottom: 20px;
     }
     
     &__title { 
         display: flex;
+        @include mobil-big { 
+         align-items: center;     
+        }
     }
     &__img { 
         margin-right: 10px;
@@ -177,14 +290,33 @@ option {
         margin-top: -35px;
         margin-left: 85px;
         font-size: 14px;
-        
+        @include mobil-big { 
+               margin-top: -10px;       
+        }
         color: $colorShuttleGray;
         &-one { 
             margin-top: -18px;
+            @include mobil-big { 
+                margin-top: -10px;
+            }
         }
     }
-       
+    &__icon { 
+        display: none;
+        align-self: flex-start;
+        @include mobil-big { 
+            display: block;
+        }
+    } 
+    &__waring { 
+        justify-content: start;
+        @include mobil-big {    
+            justify-content: space-between;        
+        }
+    }
           
         
 
 }
+
+
