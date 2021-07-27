@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Главная Оплата ФССП</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__bar">
-            <div class="header__left">
-                <img src="src/img/logo.svg" alt="logo" class="logo">
-                <div class="header__left-text">Проверка и&nbsp;оплата <br> задолженности ФССП&nbsp;РФ</div>
-            </div>
-            <div class="header__right">
-                <div class="header__right-content">
-                    <div class="content__info">Единый бесплатный многоканальный <br> справочный номер ФССП России:</div>
-                    <a href="tel:8 (800) 250 39 32" class="content__phone">8 (800) 250 39 32</a>
+                <div class="header__left">
+                    <img src="src/img/logo.svg" alt="logo" class="logo">
+                    <div class="header__left-text">Проверка и&nbsp;оплата <br> задолженности ФССП&nbsp;РФ</div>
                 </div>
-                <img src="src/img/user.svg" alt="user" class="user">
-            </div>
+                <div class="header__right">
+                    <div class="header__right-content">
+                        <div class="content__info">Единый бесплатный многоканальный <br> справочный номер ФССП России:
+                        </div>
+                        <a href="tel:8 (800) 250 39 32" class="content__phone">8 (800) 250 39 32</a>
+                    </div>
+                    <img src="src/img/user.svg" alt="user" class="user">
+                </div>
             </div>
         </div>
     </header>
@@ -29,83 +33,720 @@
         <div class="container">
             <section class="info">
                 <h2 class="section-title">Проверить задолженность у&nbsp;судебных приставов</h2>
-                <div class="info-debtor">
-                    <div action="" class="info-form">
-                    <div class="tab">
-                        <button class="btn tab-btn">Физическое лицо</button>
-                        <button class="btn tab-btn">Юридическое лицо</button>
-                        <button class="btn tab-btn">Номер ИП</button>
-                        <button class="btn tab-btn">Номер ИД</button>
-                    </div>
-                    <div class="tab-content">
-                        <input type="text" class="tab-input tab-input__big" name="FIO" >
-                        <input type="date" class="tab-input tab-input-date" name="date" >
-                        <br>
-                        <select    class="city tab-input tab-input__big">
-                            <option >Все регионы</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                        </select>
-                        <button class="btn tab-send ">Проверить задолженности</button>
-                    </div>
-                    </div>
-                    <div class="download-app">
-                        <img src="" alt="" class="app-phone">
-                        <div class="download-text"></div>
-                        <img src="" alt="" class="download__qr">
-                    </div>
-                    <div class="main-info">
-                        <details>
-                            <summary>
-
+                <div class="info-debtor ">
+                    <form action="post" class="info-form ">
+                        <div class="tab">
+                            <button class="btn tab-btn">Физическое лицо</button>
+                            <button class="btn tab-btn">Юридическое лицо</button>
+                            <button class="btn tab-btn">Номер ИП</button>
+                            <button class="btn tab-btn">Номер ИД</button>
+                        </div>
+                        <div class="tab-content">
+                            <input type="text" placeholder="Иванов Иван Иванович" class="tab-input tab-input__big"
+                                name="FIO">
+                            <input type="date" class="tab-input tab-input-date" name="date">
+                            <br>
+                            <select size="1" autocomplete="off" class="city tab-input tab-input__big">
+                                <option>Все регионы</option>
+                                <option value="Адыгея">Республика Адыгея</option>
+                                <option value="Алтай">Республика Алтай </option>
+                                <option value="Башкортостан">Республика Башкортостан </option>
+                                <option value="Бурятия">Республика Бурятия </option>
+                                <option value="Дагестан">Республика Дагестан </option>
+                                <option value="Ингушетия">Республика Ингушетия </option>
+                                <option value="Кабардино-Балкария">Кабардино-Балкарская Республика</option>
+                                <option value="Калмыкия">Республика Калмыкия </option>
+                                <option value="Карачаево-Черкессия">Карачаево-Черкесская Республика</option>
+                                <option value="Карелия">Республика Карелия </option>
+                                <option value="Коми">Республика Коми </option>
+                                <option value="Марий Эл">Республика Марий Эл </option>
+                                <option value="Мордовия">Республика Мордовия</option>
+                                <option value="Саха (Якутия)">Республика Саха (Якутия) </option>
+                                <option value="Северная Осетия - Алания">Республика Северная Осетия - Алания </option>
+                                <option value="Татарстан">Республика Татарстан</option>
+                                <option value="Тыва">Республика Тыва </option>
+                                <option value="Удмуртская">Удмуртская Республика </option>
+                                <option value="Хакасия">Республика Хакасия </option>
+                                <option value="Чеченская">Чеченская Республика</option>
+                                <option value="Чувашская Республика">Чувашская Республика</option>
+                                <option value="Алтайский край">Алтайский край</option>
+                                <option value="Забайкальский край">Забайкальский край</option>
+                                <option value="Камчатский край">Камчатский край</option>
+                                <option value="Краснодарский край">Краснодарский край</option>
+                                <option value="Красноярский край">Красноярский край</option>
+                                <option value="Пермский край">Пермский край</option>
+                                <option value="Приморский край">Приморский край</option>
+                                <option value="Ставропольский край">Ставропольский край</option>
+                                <option value="Хабаровский край">Хабаровский край</option>
+                                <option value="Амурская область">Амурская область</option>
+                                <option value="Архангельская область">Архангельская область</option>
+                                <option value="Астраханская область">Астраханская область</option>
+                                <option value="Белгородская область">Белгородская область</option>
+                                <option value="Брянская область">Брянская область </option>
+                                <option value="Владимирская область">Владимирская область </option>
+                                <option value="Волгоградская область">Волгоградская область </option>
+                                <option value="Вологодская область">Вологодская область </option>
+                                <option value="Воронежская область">Воронежская область </option>
+                                <option value="Ивановская область">Ивановская область </option>
+                                <option value="Иркутская область">Иркутская область </option>
+                                <option value="Калининградская область">Калининградская область</option>
+                                <option value="Калужская область">Калужская область </option>
+                                <option value="Кемеровская область">Кемеровская область </option>
+                                <option value="Кировская область">Кировская область </option>
+                                <option value="Костромская область">Костромская область </option>
+                                <option value="Курганская область">Курганская область </option>
+                                <option value="Курская область">Курская область </option>
+                                <option value="Ленинградская область">Ленинградская область </option>
+                                <option value="Липецкая область">Липецкая область </option>
+                                <option value="Магаданская область">Магаданская область</option>
+                                <option value="Московская область">Московская область </option>
+                                <option value="Мурманская область">Мурманская область </option>
+                                <option value="Нижегородская область">Нижегородская область </option>
+                                <option value="Новгородская область">Новгородская область </option>
+                                <option value="Новосибирская область">Новосибирская область </option>
+                                <option value="Омская область">Омская область</option>
+                                <option value="Оренбургская область">Оренбургская область </option>
+                                <option value="Орловская область">Орловская область </option>
+                                <option value="Пензенская область">Пензенская область </option>
+                                <option value="Псковская область">Псковская область </option>
+                                <option value="Ростовская область">Ростовская область </option>
+                                <option value="Рязанская область">Рязанская область </option>
+                                <option value="Самарская область">Самарская область </option>
+                                <option value="Саратовская область">Саратовская область </option>
+                                <option value="Сахалинская область">Сахалинская область </option>
+                                <option value="Свердловская область">Свердловская область </option>
+                                <option value="Смоленская область">Смоленская область </option>
+                                <option value="Тамбовская область">Тамбовская область </option>
+                                <option value="Тверская область">Тверская область </option>
+                                <option value="Томская область">Томская область </option>
+                                <option value="Тульская область">Тульская область</option>
+                                <option value="Тюменская область">Тюменская область </option>
+                                <option value="Ульяновская область">Ульяновская область </option>
+                                <option value="Челябинская область">Челябинская область </option>
+                                <option value="Ярославская область">Ярославская область</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Еврейская АО">Еврейская АО</option>
+                                <option value="Ненецкий АО">Ненецкий АО</option>
+                                <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                <option value="Чукотский АО">Чукотский АО</option>
+                                <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                            </select>
+                            <button class="btn tab-send ">Проверить задолженности</button>
+                        </div>
+                    </form>
+                    <div class="form-details">
+                        <details open class="accordion accordion-one">
+                            <summary class="accordion__title">
+                                <img src="src/img/user.svg" alt="user icon" class="form-details__img">
+                                <h3 class="form-details__title">Физическое лицо</h3>
                             </summary>
-                            <p></p>
+
+                            <input type="text" placeholder="Иванов Иван Иванович" class="form-details-input" name="FIO">
+                            <input type="date" class="form-details-input form-details-input__date" name="date">
+                            <select size="1" autocomplete="off" class="form-details-input">
+                                <option>Все регионы</option>
+                                <option value="Адыгея">Республика Адыгея</option>
+                                <option value="Алтай">Республика Алтай </option>
+                                <option value="Башкортостан">Республика Башкортостан </option>
+                                <option value="Бурятия">Республика Бурятия </option>
+                                <option value="Дагестан">Республика Дагестан </option>
+                                <option value="Ингушетия">Республика Ингушетия </option>
+                                <option value="Кабардино-Балкария">Кабардино-Балкарская Республика</option>
+                                <option value="Калмыкия">Республика Калмыкия </option>
+                                <option value="Карачаево-Черкессия">Карачаево-Черкесская Республика</option>
+                                <option value="Карелия">Республика Карелия </option>
+                                <option value="Коми">Республика Коми </option>
+                                <option value="Марий Эл">Республика Марий Эл </option>
+                                <option value="Мордовия">Республика Мордовия</option>
+                                <option value="Саха (Якутия)">Республика Саха (Якутия) </option>
+                                <option value="Северная Осетия - Алания">Республика Северная Осетия - Алания </option>
+                                <option value="Татарстан">Республика Татарстан</option>
+                                <option value="Тыва">Республика Тыва </option>
+                                <option value="Удмуртская">Удмуртская Республика </option>
+                                <option value="Хакасия">Республика Хакасия </option>
+                                <option value="Чеченская">Чеченская Республика</option>
+                                <option value="Чувашская Республика">Чувашская Республика</option>
+                                <option value="Алтайский край">Алтайский край</option>
+                                <option value="Забайкальский край">Забайкальский край</option>
+                                <option value="Камчатский край">Камчатский край</option>
+                                <option value="Краснодарский край">Краснодарский край</option>
+                                <option value="Красноярский край">Красноярский край</option>
+                                <option value="Пермский край">Пермский край</option>
+                                <option value="Приморский край">Приморский край</option>
+                                <option value="Ставропольский край">Ставропольский край</option>
+                                <option value="Хабаровский край">Хабаровский край</option>
+                                <option value="Амурская область">Амурская область</option>
+                                <option value="Архангельская область">Архангельская область</option>
+                                <option value="Астраханская область">Астраханская область</option>
+                                <option value="Белгородская область">Белгородская область</option>
+                                <option value="Брянская область">Брянская область </option>
+                                <option value="Владимирская область">Владимирская область </option>
+                                <option value="Волгоградская область">Волгоградская область </option>
+                                <option value="Вологодская область">Вологодская область </option>
+                                <option value="Воронежская область">Воронежская область </option>
+                                <option value="Ивановская область">Ивановская область </option>
+                                <option value="Иркутская область">Иркутская область </option>
+                                <option value="Калининградская область">Калининградская область</option>
+                                <option value="Калужская область">Калужская область </option>
+                                <option value="Кемеровская область">Кемеровская область </option>
+                                <option value="Кировская область">Кировская область </option>
+                                <option value="Костромская область">Костромская область </option>
+                                <option value="Курганская область">Курганская область </option>
+                                <option value="Курская область">Курская область </option>
+                                <option value="Ленинградская область">Ленинградская область </option>
+                                <option value="Липецкая область">Липецкая область </option>
+                                <option value="Магаданская область">Магаданская область</option>
+                                <option value="Московская область">Московская область </option>
+                                <option value="Мурманская область">Мурманская область </option>
+                                <option value="Нижегородская область">Нижегородская область </option>
+                                <option value="Новгородская область">Новгородская область </option>
+                                <option value="Новосибирская область">Новосибирская область </option>
+                                <option value="Омская область">Омская область</option>
+                                <option value="Оренбургская область">Оренбургская область </option>
+                                <option value="Орловская область">Орловская область </option>
+                                <option value="Пензенская область">Пензенская область </option>
+                                <option value="Псковская область">Псковская область </option>
+                                <option value="Ростовская область">Ростовская область </option>
+                                <option value="Рязанская область">Рязанская область </option>
+                                <option value="Самарская область">Самарская область </option>
+                                <option value="Саратовская область">Саратовская область </option>
+                                <option value="Сахалинская область">Сахалинская область </option>
+                                <option value="Свердловская область">Свердловская область </option>
+                                <option value="Смоленская область">Смоленская область </option>
+                                <option value="Тамбовская область">Тамбовская область </option>
+                                <option value="Тверская область">Тверская область </option>
+                                <option value="Томская область">Томская область </option>
+                                <option value="Тульская область">Тульская область</option>
+                                <option value="Тюменская область">Тюменская область </option>
+                                <option value="Ульяновская область">Ульяновская область </option>
+                                <option value="Челябинская область">Челябинская область </option>
+                                <option value="Ярославская область">Ярославская область</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Еврейская АО">Еврейская АО</option>
+                                <option value="Ненецкий АО">Ненецкий АО</option>
+                                <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                <option value="Чукотский АО">Чукотский АО</option>
+                                <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                            </select>
+                            <button class="btn tab-send form-details-input form-details-input__btn">Проверить
+                                задолженности</button>
                         </details>
+                        <details open class="accordion ">
+                            <summary class="accordion__title">
+                                <img src="src/img/bilding.svg" alt="bilding" class="form-details__img">
+                                <h3 class="form-details__title">Юридическое лицо</h3>
+                            </summary>
+
+                            <input type="text" placeholder="Иванов Иван Иванович" class="form-details-input" name="FIO">
+                            <input type="date" class="form-details-input form-details-input__date" name="date">
+                            <select size="1" autocomplete="off" class="form-details-input">
+                                <option>Все регионы</option>
+                                <option value="Адыгея">Республика Адыгея</option>
+                                <option value="Алтай">Республика Алтай </option>
+                                <option value="Башкортостан">Республика Башкортостан </option>
+                                <option value="Бурятия">Республика Бурятия </option>
+                                <option value="Дагестан">Республика Дагестан </option>
+                                <option value="Ингушетия">Республика Ингушетия </option>
+                                <option value="Кабардино-Балкария">Кабардино-Балкарская Республика</option>
+                                <option value="Калмыкия">Республика Калмыкия </option>
+                                <option value="Карачаево-Черкессия">Карачаево-Черкесская Республика</option>
+                                <option value="Карелия">Республика Карелия </option>
+                                <option value="Коми">Республика Коми </option>
+                                <option value="Марий Эл">Республика Марий Эл </option>
+                                <option value="Мордовия">Республика Мордовия</option>
+                                <option value="Саха (Якутия)">Республика Саха (Якутия) </option>
+                                <option value="Северная Осетия - Алания">Республика Северная Осетия - Алания </option>
+                                <option value="Татарстан">Республика Татарстан</option>
+                                <option value="Тыва">Республика Тыва </option>
+                                <option value="Удмуртская">Удмуртская Республика </option>
+                                <option value="Хакасия">Республика Хакасия </option>
+                                <option value="Чеченская">Чеченская Республика</option>
+                                <option value="Чувашская Республика">Чувашская Республика</option>
+                                <option value="Алтайский край">Алтайский край</option>
+                                <option value="Забайкальский край">Забайкальский край</option>
+                                <option value="Камчатский край">Камчатский край</option>
+                                <option value="Краснодарский край">Краснодарский край</option>
+                                <option value="Красноярский край">Красноярский край</option>
+                                <option value="Пермский край">Пермский край</option>
+                                <option value="Приморский край">Приморский край</option>
+                                <option value="Ставропольский край">Ставропольский край</option>
+                                <option value="Хабаровский край">Хабаровский край</option>
+                                <option value="Амурская область">Амурская область</option>
+                                <option value="Архангельская область">Архангельская область</option>
+                                <option value="Астраханская область">Астраханская область</option>
+                                <option value="Белгородская область">Белгородская область</option>
+                                <option value="Брянская область">Брянская область </option>
+                                <option value="Владимирская область">Владимирская область </option>
+                                <option value="Волгоградская область">Волгоградская область </option>
+                                <option value="Вологодская область">Вологодская область </option>
+                                <option value="Воронежская область">Воронежская область </option>
+                                <option value="Ивановская область">Ивановская область </option>
+                                <option value="Иркутская область">Иркутская область </option>
+                                <option value="Калининградская область">Калининградская область</option>
+                                <option value="Калужская область">Калужская область </option>
+                                <option value="Кемеровская область">Кемеровская область </option>
+                                <option value="Кировская область">Кировская область </option>
+                                <option value="Костромская область">Костромская область </option>
+                                <option value="Курганская область">Курганская область </option>
+                                <option value="Курская область">Курская область </option>
+                                <option value="Ленинградская область">Ленинградская область </option>
+                                <option value="Липецкая область">Липецкая область </option>
+                                <option value="Магаданская область">Магаданская область</option>
+                                <option value="Московская область">Московская область </option>
+                                <option value="Мурманская область">Мурманская область </option>
+                                <option value="Нижегородская область">Нижегородская область </option>
+                                <option value="Новгородская область">Новгородская область </option>
+                                <option value="Новосибирская область">Новосибирская область </option>
+                                <option value="Омская область">Омская область</option>
+                                <option value="Оренбургская область">Оренбургская область </option>
+                                <option value="Орловская область">Орловская область </option>
+                                <option value="Пензенская область">Пензенская область </option>
+                                <option value="Псковская область">Псковская область </option>
+                                <option value="Ростовская область">Ростовская область </option>
+                                <option value="Рязанская область">Рязанская область </option>
+                                <option value="Самарская область">Самарская область </option>
+                                <option value="Саратовская область">Саратовская область </option>
+                                <option value="Сахалинская область">Сахалинская область </option>
+                                <option value="Свердловская область">Свердловская область </option>
+                                <option value="Смоленская область">Смоленская область </option>
+                                <option value="Тамбовская область">Тамбовская область </option>
+                                <option value="Тверская область">Тверская область </option>
+                                <option value="Томская область">Томская область </option>
+                                <option value="Тульская область">Тульская область</option>
+                                <option value="Тюменская область">Тюменская область </option>
+                                <option value="Ульяновская область">Ульяновская область </option>
+                                <option value="Челябинская область">Челябинская область </option>
+                                <option value="Ярославская область">Ярославская область</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Еврейская АО">Еврейская АО</option>
+                                <option value="Ненецкий АО">Ненецкий АО</option>
+                                <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                <option value="Чукотский АО">Чукотский АО</option>
+                                <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                            </select>
+                            <button class="btn tab-send form-details-input form-details-input__btn">Проверить
+                                задолженности</button>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title">
+                                <img src="src/img/ip.svg" alt="Ip" class="form-details__img">
+                                <h3 class="form-details__title">Номер ИП</h3>
+                            </summary>
+
+                            <input type="text" placeholder="Иванов Иван Иванович" class="form-details-input" name="FIO">
+                            <input type="date" class="form-details-input form-details-input__date" name="date">
+                            <select size="1" autocomplete="off" class="form-details-input">
+                                <option>Все регионы</option>
+                                <option value="Адыгея">Республика Адыгея</option>
+                                <option value="Алтай">Республика Алтай </option>
+                                <option value="Башкортостан">Республика Башкортостан </option>
+                                <option value="Бурятия">Республика Бурятия </option>
+                                <option value="Дагестан">Республика Дагестан </option>
+                                <option value="Ингушетия">Республика Ингушетия </option>
+                                <option value="Кабардино-Балкария">Кабардино-Балкарская Республика</option>
+                                <option value="Калмыкия">Республика Калмыкия </option>
+                                <option value="Карачаево-Черкессия">Карачаево-Черкесская Республика</option>
+                                <option value="Карелия">Республика Карелия </option>
+                                <option value="Коми">Республика Коми </option>
+                                <option value="Марий Эл">Республика Марий Эл </option>
+                                <option value="Мордовия">Республика Мордовия</option>
+                                <option value="Саха (Якутия)">Республика Саха (Якутия) </option>
+                                <option value="Северная Осетия - Алания">Республика Северная Осетия - Алания </option>
+                                <option value="Татарстан">Республика Татарстан</option>
+                                <option value="Тыва">Республика Тыва </option>
+                                <option value="Удмуртская">Удмуртская Республика </option>
+                                <option value="Хакасия">Республика Хакасия </option>
+                                <option value="Чеченская">Чеченская Республика</option>
+                                <option value="Чувашская Республика">Чувашская Республика</option>
+                                <option value="Алтайский край">Алтайский край</option>
+                                <option value="Забайкальский край">Забайкальский край</option>
+                                <option value="Камчатский край">Камчатский край</option>
+                                <option value="Краснодарский край">Краснодарский край</option>
+                                <option value="Красноярский край">Красноярский край</option>
+                                <option value="Пермский край">Пермский край</option>
+                                <option value="Приморский край">Приморский край</option>
+                                <option value="Ставропольский край">Ставропольский край</option>
+                                <option value="Хабаровский край">Хабаровский край</option>
+                                <option value="Амурская область">Амурская область</option>
+                                <option value="Архангельская область">Архангельская область</option>
+                                <option value="Астраханская область">Астраханская область</option>
+                                <option value="Белгородская область">Белгородская область</option>
+                                <option value="Брянская область">Брянская область </option>
+                                <option value="Владимирская область">Владимирская область </option>
+                                <option value="Волгоградская область">Волгоградская область </option>
+                                <option value="Вологодская область">Вологодская область </option>
+                                <option value="Воронежская область">Воронежская область </option>
+                                <option value="Ивановская область">Ивановская область </option>
+                                <option value="Иркутская область">Иркутская область </option>
+                                <option value="Калининградская область">Калининградская область</option>
+                                <option value="Калужская область">Калужская область </option>
+                                <option value="Кемеровская область">Кемеровская область </option>
+                                <option value="Кировская область">Кировская область </option>
+                                <option value="Костромская область">Костромская область </option>
+                                <option value="Курганская область">Курганская область </option>
+                                <option value="Курская область">Курская область </option>
+                                <option value="Ленинградская область">Ленинградская область </option>
+                                <option value="Липецкая область">Липецкая область </option>
+                                <option value="Магаданская область">Магаданская область</option>
+                                <option value="Московская область">Московская область </option>
+                                <option value="Мурманская область">Мурманская область </option>
+                                <option value="Нижегородская область">Нижегородская область </option>
+                                <option value="Новгородская область">Новгородская область </option>
+                                <option value="Новосибирская область">Новосибирская область </option>
+                                <option value="Омская область">Омская область</option>
+                                <option value="Оренбургская область">Оренбургская область </option>
+                                <option value="Орловская область">Орловская область </option>
+                                <option value="Пензенская область">Пензенская область </option>
+                                <option value="Псковская область">Псковская область </option>
+                                <option value="Ростовская область">Ростовская область </option>
+                                <option value="Рязанская область">Рязанская область </option>
+                                <option value="Самарская область">Самарская область </option>
+                                <option value="Саратовская область">Саратовская область </option>
+                                <option value="Сахалинская область">Сахалинская область </option>
+                                <option value="Свердловская область">Свердловская область </option>
+                                <option value="Смоленская область">Смоленская область </option>
+                                <option value="Тамбовская область">Тамбовская область </option>
+                                <option value="Тверская область">Тверская область </option>
+                                <option value="Томская область">Томская область </option>
+                                <option value="Тульская область">Тульская область</option>
+                                <option value="Тюменская область">Тюменская область </option>
+                                <option value="Ульяновская область">Ульяновская область </option>
+                                <option value="Челябинская область">Челябинская область </option>
+                                <option value="Ярославская область">Ярославская область</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Еврейская АО">Еврейская АО</option>
+                                <option value="Ненецкий АО">Ненецкий АО</option>
+                                <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                <option value="Чукотский АО">Чукотский АО</option>
+                                <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                            </select>
+                            <button class="btn tab-send form-details-input form-details-input__btn">Проверить
+                                задолженности</button>
+                        </details>
+                        <details open class="accordion ">
+                            <summary class="accordion__title ">
+                                <img src="src/img/id.svg" alt="id" class="form-details__img">
+                                <h3 class="form-details__title">Номер ИД</h3>
+                            </summary>
+
+                            <input type="text" placeholder="Иванов Иван Иванович" class="form-details-input" name="FIO">
+                            <input type="date" class="form-details-input form-details-input__date" name="date">
+                            <select size="1" autocomplete="off" class="form-details-input">
+                                <option>Все регионы</option>
+                                <option value="Адыгея">Республика Адыгея</option>
+                                <option value="Алтай">Республика Алтай </option>
+                                <option value="Башкортостан">Республика Башкортостан </option>
+                                <option value="Бурятия">Республика Бурятия </option>
+                                <option value="Дагестан">Республика Дагестан </option>
+                                <option value="Ингушетия">Республика Ингушетия </option>
+                                <option value="Кабардино-Балкария">Кабардино-Балкарская Республика</option>
+                                <option value="Калмыкия">Республика Калмыкия </option>
+                                <option value="Карачаево-Черкессия">Карачаево-Черкесская Республика</option>
+                                <option value="Карелия">Республика Карелия </option>
+                                <option value="Коми">Республика Коми </option>
+                                <option value="Марий Эл">Республика Марий Эл </option>
+                                <option value="Мордовия">Республика Мордовия</option>
+                                <option value="Саха (Якутия)">Республика Саха (Якутия) </option>
+                                <option value="Северная Осетия - Алания">Республика Северная Осетия - Алания </option>
+                                <option value="Татарстан">Республика Татарстан</option>
+                                <option value="Тыва">Республика Тыва </option>
+                                <option value="Удмуртская">Удмуртская Республика </option>
+                                <option value="Хакасия">Республика Хакасия </option>
+                                <option value="Чеченская">Чеченская Республика</option>
+                                <option value="Чувашская Республика">Чувашская Республика</option>
+                                <option value="Алтайский край">Алтайский край</option>
+                                <option value="Забайкальский край">Забайкальский край</option>
+                                <option value="Камчатский край">Камчатский край</option>
+                                <option value="Краснодарский край">Краснодарский край</option>
+                                <option value="Красноярский край">Красноярский край</option>
+                                <option value="Пермский край">Пермский край</option>
+                                <option value="Приморский край">Приморский край</option>
+                                <option value="Ставропольский край">Ставропольский край</option>
+                                <option value="Хабаровский край">Хабаровский край</option>
+                                <option value="Амурская область">Амурская область</option>
+                                <option value="Архангельская область">Архангельская область</option>
+                                <option value="Астраханская область">Астраханская область</option>
+                                <option value="Белгородская область">Белгородская область</option>
+                                <option value="Брянская область">Брянская область </option>
+                                <option value="Владимирская область">Владимирская область </option>
+                                <option value="Волгоградская область">Волгоградская область </option>
+                                <option value="Вологодская область">Вологодская область </option>
+                                <option value="Воронежская область">Воронежская область </option>
+                                <option value="Ивановская область">Ивановская область </option>
+                                <option value="Иркутская область">Иркутская область </option>
+                                <option value="Калининградская область">Калининградская область</option>
+                                <option value="Калужская область">Калужская область </option>
+                                <option value="Кемеровская область">Кемеровская область </option>
+                                <option value="Кировская область">Кировская область </option>
+                                <option value="Костромская область">Костромская область </option>
+                                <option value="Курганская область">Курганская область </option>
+                                <option value="Курская область">Курская область </option>
+                                <option value="Ленинградская область">Ленинградская область </option>
+                                <option value="Липецкая область">Липецкая область </option>
+                                <option value="Магаданская область">Магаданская область</option>
+                                <option value="Московская область">Московская область </option>
+                                <option value="Мурманская область">Мурманская область </option>
+                                <option value="Нижегородская область">Нижегородская область </option>
+                                <option value="Новгородская область">Новгородская область </option>
+                                <option value="Новосибирская область">Новосибирская область </option>
+                                <option value="Омская область">Омская область</option>
+                                <option value="Оренбургская область">Оренбургская область </option>
+                                <option value="Орловская область">Орловская область </option>
+                                <option value="Пензенская область">Пензенская область </option>
+                                <option value="Псковская область">Псковская область </option>
+                                <option value="Ростовская область">Ростовская область </option>
+                                <option value="Рязанская область">Рязанская область </option>
+                                <option value="Самарская область">Самарская область </option>
+                                <option value="Саратовская область">Саратовская область </option>
+                                <option value="Сахалинская область">Сахалинская область </option>
+                                <option value="Свердловская область">Свердловская область </option>
+                                <option value="Смоленская область">Смоленская область </option>
+                                <option value="Тамбовская область">Тамбовская область </option>
+                                <option value="Тверская область">Тверская область </option>
+                                <option value="Томская область">Томская область </option>
+                                <option value="Тульская область">Тульская область</option>
+                                <option value="Тюменская область">Тюменская область </option>
+                                <option value="Ульяновская область">Ульяновская область </option>
+                                <option value="Челябинская область">Челябинская область </option>
+                                <option value="Ярославская область">Ярославская область</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Еврейская АО">Еврейская АО</option>
+                                <option value="Ненецкий АО">Ненецкий АО</option>
+                                <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                <option value="Чукотский АО">Чукотский АО</option>
+                                <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                            </select>
+                            <button class="btn tab-send form-details-input form-details-input__btn">Проверить
+                                задолженности</button>
+                        </details>
+                    </div>
+                    <div class="main-info ">
+                        <details open class="accordion">
+                            <summary class="accordion__title accordion__waring">
+                                <img src="src/img/fssp-logo-remodel.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Официальный <br> источник данных</h3>
+                                <img src="src/img/info-icon.svg" alt="waring info" class="accordion__icon">
+                            </summary>
+                            <p class="accordion__text accordion__text-one">Сведения о&nbsp;задолженностях <br>
+                                получаются
+                                из&nbsp;официального <br> банка данных исполнительных <br> производств ФССП России</p>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title accordion__waring">
+                                <img src="src/img/pog.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Гарантия погашения</h3>
+                                <img src="src/img/info-icon.svg" alt="waring info" class="accordion__icon">
+                            </summary>
+                            <p class="accordion__text">Сведения об&nbsp;оплате <br> передаются в&nbsp;ФССП России
+                                с&nbsp; <br> использованием шлюзов <br> Федерального казначейства</p>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title accordion__waring">
+                                <img src="src/img/verified-pci.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Безопасные платежи</h3>
+                                <img src="src/img/info-icon.svg" alt="waring info" class="accordion__icon">
+                            </summary>
+                            <p class="accordion__text">Безопасность платежей и&nbsp; <br> данных банковских карт <br>
+                                подтверждается <br> сертификатом PCI&nbsp;DSS</p>
+                        </details>
+                        <details open class="accordion">
+                            <summary class="accordion__title accordion__waring">
+                                <img src="src/img/kvi.svg" alt="logo fssp" class="accordion__img">
+                                <h3 class="main__title">Квитанция об оплате</h3>
+                                <img src="src/img/info-icon.svg" alt="waring info" class="accordion__icon">
+                            </summary>
+                            <p class="accordion__text">Квитанция будет отправлена <br> на&nbsp;указанный Вами адрес <br>
+                                электронной почты сразу&nbsp;же <br> после оплаты</p>
+                        </details>
+                    </div>
+                    <div class="download ">
+                        <div class="download-app">
+                            <img src="src/img/phone-iphone.svg" alt="iphone" class="app-phone">
+                            <div class="download-text">
+                                <h3 class="download__title">ФССП России&nbsp;&mdash; проверка и&nbsp;оплата</h3>
+                                <div class="download__app">Приложение</div>
+                                <ul class="download__item">
+                                    <li class="download__list">Проверка и&nbsp;оплата по&nbsp;базе ФССП</li>
+                                    <li class="download__list">Квитанция об&nbsp;оплате всегда под <br> рукой</li>
+                                    <li class="download__list">Ответы на&nbsp;часто задаваемые <br> вопросы</li>
+                                </ul>
+                            </div>
+                            <div class="qr">
+                                <img src="src/img/qr.svg" alt="qr" class="qr__img">
+                                <div class="qr__text">Наведите камеру или сканер QR-кодов</div>
+                            </div>
+                            <div class="link-app">
+                                <a href="#" class="btn download-btn"><img src="src/img/applestory.svg"
+                                        alt="applestory"></a>
+                                <a href="#" class="btn download-btn"><img src="src/img/google-play-badge.svg"
+                                        alt="google-play"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
         <section class="news">
             <div class="container">
-                <div class="slider"></div>
+                <a href="#" class="link news-link">Все новости</a>
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="src/img/news.svg" alt="" class="slider__item-news">
+                        <h3 class="slider__title">Жилье россиян в&nbsp;пандемию стали реже <br> принудительно продавать
+                            за&nbsp;долги</h3>
+                        <div class="slider__text">В&nbsp;2020 году судебные приставы в&nbsp;интересах кредиторов
+                            выставили на&nbsp;торги на&nbsp;14,1% меньше квартир, чем годом ранее.</div>
+                    </div>
+                    <div class="slider__item">
+                        <img src="src/img/news.svg" alt="" class="slider__item-news">
+                        <h3 class="slider__title">Число невыездных из-за долгов россиян выросло на 20% за год</h3>
+                        <div class="slider__text">Более 4 млн россиян не могут покинуть страну из-за долгов. За год
+                            таких граждан стало больше примерно на 700 тыс.</div>
+                    </div>
+                    <div class="slider__item">
+                        <img src="src/img/news.svg" alt="" class="slider__item-news">
+                        <h3 class="slider__title">Компания Филиппа Киркорова задолжала налоговой ₽95 тыс.</h3>
+                        <div class="slider__text">ООО «Филипп Киркоров Продакшн» задолжало Федеральной налоговой службе
+                            95 тыс. 605 руб. </div>
+                    </div>
+                    <div class="slider__item">
+                        <img src="src/img/news.svg" alt="" class="slider__item-news">
+                        <h3 class="slider__title">Жилье россиян в&nbsp;пандемию стали реже <br> принудительно продавать
+                            за&nbsp;долги</h3>
+                        <div class="slider__text">В&nbsp;2020 году судебные приставы в&nbsp;интересах кредиторов
+                            выставили на&nbsp;торги на&nbsp;14,1% меньше квартир, чем годом ранее.</div>
+
+                    </div>
+                    <div class="slider__item">
+                        <img src="src/img/news.svg" alt="" class="slider__item-news">
+                        <h3 class="slider__title">Жилье россиян в&nbsp;пандемию стали реже <br> принудительно продавать
+                            за&nbsp;долги</h3>
+                        <div class="slider__text">В&nbsp;2020 году судебные приставы в&nbsp;интересах кредиторов
+                            выставили на&nbsp;торги на&nbsp;14,1% меньше квартир, чем годом ранее.</div>
+                    </div>
+                    <div class="slider__item">
+                        <img src="src/img/news.svg" alt="" class="slider__item-news">
+                        <h3 class="slider__title">Жилье россиян в&nbsp;пандемию стали реже <br> принудительно продавать
+                            за&nbsp;долги</h3>
+                        <div class="slider__text">В&nbsp;2020 году судебные приставы в&nbsp;интересах кредиторов
+                            выставили на&nbsp;торги на&nbsp;14,1% меньше квартир, чем годом ранее.</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="article">
             <div class="container">
-                <div class="article-of-work">
-
-                </div>
-                <div class="territory">
-
+                <div class="article-content">
+                    <div class="article-of-work">
+                        <h3 class="article__title">Статьи о&nbsp;работе ФССП</h3>
+                        <ul class="article__items article__items-of-work">
+                            <li class="article__list">
+                                <h4 class="list__title">Как приставы списывают деньги с&nbsp;карты</h4>
+                                <div class="list__text">Описание процедуры списания денег приставами, ответы
+                                    на&nbsp;часто задаваемые по&nbsp;этому <br> поводу вопросы.</div>
+                            </li>
+                            <li class="article__list">
+                                <h4 class="list__title">Как приставы списывают деньги с&nbsp;карты. И&nbsp;как
+                                    их&nbsp;потом возвращать</h4>
+                                <div class="list__text">Описание процедуры списания денег приставами, ответы
+                                    на&nbsp;часто <br> задаваемые по&nbsp;этому поводу вопросы. Ответы на&nbsp;часто
+                                    задаваемые по <br> этому поводу вопросы. Ответы на&nbsp;часто задаваемые
+                                    по&nbsp;этому поводу <br> вопросы.</div>
+                            </li>
+                            <li class="article__list">
+                                <h4 class="list__title">Как приставы списывают деньги с&nbsp;карты</h4>
+                                <div class="list__text">Описание процедуры списания денег приставами, ответы
+                                    на&nbsp;часто задаваемые по&nbsp;этому <br> поводу вопросы.</div>
+                            </li>
+                            <li class="article__list">
+                                <h4 class="list__title">Как приставы списывают деньги с&nbsp;карты. И&nbsp;как
+                                    их&nbsp;потом возвращать</h4>
+                                <div class="list__text">Описание процедуры списания денег приставами, ответы
+                                    на&nbsp;часто <br> задаваемые по&nbsp;этому поводу вопросы. Ответы на&nbsp;часто
+                                    задаваемые по <br> этому поводу вопросы. Ответы на&nbsp;часто задаваемые
+                                    по&nbsp;этому поводу <br> вопросы.</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="link">Все статьи</a>
+                    </div>
+                    <div class="territory">
+                        <h3 class="article__title">Территориальные <br>
+                            отделения ФССП России</h3>
+                        <ul class="article__items">
+                            <li class="list__text"><a href="#">Москва</a></li>
+                            <li class="list__text"><a href="#">Московская область</a></li>
+                            <li class="list__text"><a href="#">Санкт-петербург</a></li>
+                            <li class="list__text"><a href="#">Краснодар</a></li>
+                            <li class="list__text"><a href="#">Екатеринбург</a></li>
+                            <li class="list__text"><a href="#">Челябинск</a></li>
+                            <li class="list__text"><a href="#">Казань</a></li>
+                            <li class="list__text"><a href="#">Красноярск</a></li>
+                            <li class="list__text"><a href="#">Республика Дагестан</a></li>
+                            <li class="list__text"><a href="#">Республика Башкортостан</a></li>
+                            <li class="list__text"><a href="#">Ростов-на-Дону</a></li>
+                            <li class="list__text"><a href="#">Самара</a></li>
+                            <li class="list__text"><a href="#">Нижний Новгород</a></li>
+                            <li class="list__text"><a href="#">Новосибирск</a></li>
+                            <li class="list__text"><a href="#">Пермский край</a></li>
+                        </ul>
+                        <a href="#" class="link link-two">Все территориальные отделения</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-        <div class="footer-list">
-            <ul class="footer__list">
-                <li class="footer__items"><h3 class="title-items">Основные разделы</h3></li>
-                <li class="footer__items"><a href="#" class="footer__items__link">Проверка и оплата задолженностей ФССП</a></li>
-                <li class="footer__items"><a href="#" class="footer__items__link"> Статьи о работе ФССП</a></li>
-                <li class="footer__items"><a href="#" class="footer__items__link">Новости</a></li>
-                <li class="footer__items"><a href="#" class="footer__items__link">Часто задаваемые вопросы</a></li>
-            </ul>
-            <div class="footer-text">При обращении по вопросам прохождения оплаты и погашения задолженности по ИП укажите, пожалуйста, номер транзакции, который был отправлен в письме о подтверждении успешной оплаты.</div>
-        </div>
-        <div class="footer-text">Сервис oplata-fssp.ru создан для удобной онлайн проверки и оплаты задолженностей по исполнительным производствам Федеральной службы судебных приставов России (ФССП). 
-            Сервис осуществляет свою деятельность в рамках соглашения с Федеральной службой судебных приставов №0011/14 от 11 мая 2017.
-            Операторами по переводу денежных средств являются НКО “Монета.ру” (лицензия ЦБ РФ №3508-К от 02 июля 2012) и ПАО “Промсвязьбанк” (лицензия ЦБ РФ №3521 от 17 декабря 2014).
-            
+            <div class="footer-nav">
+                <ul class="footer__items footer__items-first">
+                    <li class="footer__list">
+                        <h3 class="footer__list-title">Основные разделы</h3>
+                    </li>
+                    <li class="footer__list"><a href="#" class="footer__list__link">Проверка и оплата задолженностей
+                            ФССП</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list__link"> Статьи о работе ФССП</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list__link">Новости</a></li>
+                    <li class="footer__list"><a href="#" class="footer__list__link">Часто задаваемые вопросы</a></li>
+                </ul>
+                <ul class="footer__items ">
+                    <li class="footer__list">
+                        <h3 class="footer__list-title">Оператор сервиса</h3>
+                    </li>
+                    <li class="footer__list">ООО ”Простые платежи”</li>
+                    <li class="footer__list">ИНН: 1660269024</li>
+                    <li class="footer__list">
+                        ОГРН: 1161690087547</li>
+                </ul>
+                <ul class="footer__items">
+                    <li class="footer__list">
+                        <h3 class="footer__list-title">Контакты и поддержка</h3>
+                    </li>
+                    <li class="footer__list">г. Казань, ул. Толбухина 11-54</li>
+                    <li class="footer__list">В случае возникновения вопросов обращайтесь в службу поддержки
+                        клиентов по адресу: <a href="mailto:support@oplata-fssp.ru " class="link">support@oplata-fssp.ru </a></li>
+                </ul>
+                <div class="footer-text">При обращении по вопросам прохождения оплаты и погашения задолженности по ИП
+                    укажите, пожалуйста, номер транзакции, который был отправлен в письме о подтверждении успешной
+                    оплаты.</div>
+            </div>
+            <div class="footer-text">Сервис oplata-fssp.ru создан для удобной онлайн проверки и&nbsp;оплаты
+                задолженностей по&nbsp;исполнительным производствам Федеральной службы судебных приставов России (ФССП).
+                Сервис осуществляет свою деятельность в&nbsp;рамках соглашения с&nbsp;Федеральной службой судебных
+                приставов &#8470;&nbsp;0011/14 от&nbsp;11&nbsp;мая 2017. <br>
+                Операторами по&nbsp;переводу денежных средств являются НКО &laquo;Монета.ру&raquo; (лицензия ЦБ&nbsp;РФ
+                &#8470;&nbsp;3508-К от&nbsp;02&nbsp;июля 2012) и&nbsp;ПАО &laquo;Промсвязьбанк&raquo; (лицензия
+                ЦБ&nbsp;РФ &#8470;&nbsp;3521 от&nbsp;17&nbsp;декабря 2014).
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
+
 </html>

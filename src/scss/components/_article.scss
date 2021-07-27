@@ -1,0 +1,74 @@
+.article { 
+    margin-bottom: 40px;
+    .link { 
+        display: block;
+        padding-bottom: 20px;
+        &-two {
+            padding-top: 20px;
+        }
+    }
+    &-content { 
+        display: flex;
+        color: $colorTePapaGreenOP;
+        @include tablet { 
+            flex-direction: column;
+        }
+    }
+    &-of-work {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding-left: 25px;
+        margin-right: 20px;
+        flex: 0 0 67%;
+        @include tablet { 
+            flex: 0 0 100%;
+            margin-right: 0;
+        }
+    }
+    &__items { 
+        &-of-work {
+            padding-bottom: 45px;
+        }
+    }
+    &__title {
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: $colorTePapaGreen;
+    }
+    &__list { 
+        margin-bottom: 25px;   
+    }
+}
+
+.list { 
+    &__title { 
+        font-weight: 600;
+        padding-bottom: 8px;
+    }
+    &__text {
+        font-size: 14.5px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+.territory { 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding-left: 25px;
+    flex: 0 0 35%;
+    .list__text { 
+        padding-bottom: 10px;
+        
+        a { 
+            color: $colorBlackText;
+        }
+    }
+    @include desktop { 
+        flex: 1 0 30%;
+    }
+    @include tablet { 
+        flex: 0 0 100%;
+    }
+}

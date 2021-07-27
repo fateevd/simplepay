@@ -13,6 +13,7 @@
     font-weight: 900;
     color: $colorTePapaGreen;
     padding-bottom: 30px;
+<<<<<<< HEAD
 }
 
 .info {
@@ -78,19 +79,41 @@
         &:active { 
             background: $colorWildSand;
         }
+=======
+    @include mobil-big {
+        font-size: 18px;
+>>>>>>> danil
     }
 }
 
-
-
-
-
-
+.link { 
+    font-weight: 600;
+    color: $colorHG; 
+}
 
 @import "components/header";
+<<<<<<< HEAD
 
 
 
 @media screen {
     
 }
+=======
+@import "components/info";
+@import "components/article";
+@import "components/slider";
+@import "components/footer";
+@import "components/info-mobil";
+select {
+    &::-webkit-scrollbar {
+    width: 10px;
+    background: $colorAlabaster;
+  }
+  &::-webkit-scrollbar-thumb { 
+      background: $colorHG;
+      border-radius: 8px;
+  }
+}
+
+>>>>>>> danil

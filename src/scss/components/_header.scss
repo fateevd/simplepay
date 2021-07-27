@@ -24,7 +24,9 @@
         &-text { 
             font-size: 22px;
             color: $colorBlackText;
-            line-height: 28px;
+            @include mobil-big { 
+                font-size: 16px;
+            }
         }
     }
     &__right { 
@@ -32,6 +34,7 @@
             text-align: end;
             margin-right: 30px;
         }
+       
     }
 
 }
@@ -45,10 +48,16 @@
     &__info { 
         color: $colorGrayText;
         margin-bottom: 6px;
+        @include mobil-big { 
+            display: none;
+        }
     }
     &__phone { 
         font-size: 20px;
         color: $colorBlackText;
         font-weight: 600;
+        @include mobil-big { 
+            display: none;
+        }
     }
 }
