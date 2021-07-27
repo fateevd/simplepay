@@ -39,7 +39,6 @@ $(document).ready(() => {
         ]
     });
 });
-
 $(window).resize( () => {
   let w = $(window).width();
   if( w < 650) { 
