@@ -742,6 +742,13 @@ details::-webkit-details-marker {
   }
 }
 
+@media (max-width: 650px) {
+  .download {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+}
+
 .download-app {
   margin-top: 30px;
   -ms-flex-item-align: start;
@@ -941,24 +948,23 @@ details::-webkit-details-marker {
             transform: translateY(0);
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 }
 
 @media (max-width: 650px) {
   .main-info {
-    -ms-grid-columns: (100%)[1];
-        grid-template-columns: repeat(1, 100%);
-    grid-gap: 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
 .main__title {
   padding-top: 5px;
   font-weight: 700;
-  font-style: 18px;
+  font-size: 18px;
   color: #203538;
 }
 
@@ -1119,7 +1125,7 @@ details::-webkit-details-marker {
 .article__title {
   padding: 20px 0;
   font-size: 20px;
-  font-weight: 70;
+  font-weight: 700;
   color: #203538;
 }
 
@@ -1440,7 +1446,7 @@ details::-webkit-details-marker {
 
 .form-details {
   display: none;
-  font-size: 16;
+  font-size: 16px;
 }
 
 @media (max-width: 650px) {
