@@ -13,76 +13,8 @@
     font-weight: 900;
     color: $colorTePapaGreen;
     padding-bottom: 30px;
-<<<<<<< HEAD
-}
-
-.info {
-    &-form { 
-        display: block;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-        border-radius: 10px;
-    } 
-    
-}
-
-.btn { 
-    font-size: 20px;
-    background: $colorWildSand;
-}
-
-.tab { 
-    background: $colorWildSand;
-    border-radius:  10px 10px 0 0 ;
-    display: flex;
-    justify-content: space-between;
-    &-btn { 
-        padding: 18px;
-        margin: -1px -2px;
-        &:active , &:hover { 
-            background: $colorWhite;
-        }
-        &:first-child { 
-            border-radius: 10px 0 0 0; 
-            background: $colorWhite;
-        }
-        &:last-child { 
-            border-radius: 0 10px 0 0 ;
-        }
-    }
-    &-content { 
-        padding-top: 30px;
-    }
-    &-input { 
-
-        font-size: 20px;
-        padding: 10px  16px;
-        border-radius: 10px;
-        border: 1.5px solid rgba(65, 65, 65, 0.3);
-        color: $colorGrayText;
-        &:focus { 
-            color: $colorBlackText;
-        }
-        &__big { 
-            width: 400px;
-            margin: 0 20px 20px 0;
-        }
-        &-date { 
-            min-width: 304px;
-        }
-    }
-    &-send { 
-        border: 1.5px solid $colorHG;
-        border-radius: 10px;
-        background: $colorWhite;
-        color: $colorHG;
-        padding: 11px 32px;
-        &:active { 
-            background: $colorWildSand;
-        }
-=======
     @include mobil-big {
         font-size: 18px;
->>>>>>> danil
     }
 }
 
@@ -92,19 +24,14 @@
 }
 
 @import "components/header";
-<<<<<<< HEAD
-
-
-
-@media screen {
-    
-}
-=======
 @import "components/info";
 @import "components/article";
 @import "components/slider";
 @import "components/footer";
 @import "components/info-mobil";
+
+
+
 select {
     &::-webkit-scrollbar {
     width: 10px;
@@ -115,5 +42,3 @@ select {
       border-radius: 8px;
   }
 }
-
->>>>>>> danil
